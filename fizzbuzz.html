@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Fizzbuzz</title>
 </head>
 <body>
-    <div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="calculator.html">Calculator</a></li>
-            <li>Fizzbuzz</li>
-            <li><a href="roman.html">Roman Numerals</a></li>
-        </ul>
-    </div>
-    <h1>Fizzbuzz</h1>
-    <div>
-        <form id="fizzForm">
-            <label>Enter two silly words
-                <input type="text" placeholder="fizz" id="inputFizz">
-                <input type="text" placeholder="buzz" id="inputBuzz">
-            </label>
-            <input type="submit" value="FizzBuzz it!" id="inputButton">
-        </form>
+    <div class="container-project">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li class="active">Fizzbuzz</li>
+                <li><a href="roman.html">Roman Numerals</a></li>
+            </ul>
+        </div>
+        <h1>Fizzbuzz</h1>
         <div>
-            <h3>Result</h3> 
-            <p id="result"></p>
+            <form id="fizzForm">
+                <label>Enter two silly words
+                    <input type="text" placeholder="fizz" id="inputFizz">
+                    <input type="text" placeholder="buzz" id="inputBuzz">
+                </label>
+                <input type="submit" value="FizzBuzz it!" id="inputButton">
+            </form>
+            <div id="result">
+                
+            </div>
+        </div>
+        <div>
+            <button id = "showCode"> 
+                Show/Hide Code
+            </button>
+            <div id="codeSnippet" style="display:none">
+                <img src="fizzbuzz-pic.png" alt="">
+            </div>
         </div>
     </div>
     <script src="fizzbuzz.js"></script>

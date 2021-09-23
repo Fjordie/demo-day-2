@@ -32,6 +32,8 @@ const toRomans = number => {
 const romanForm = document.querySelector('#romanForm');
 const inputString = document.querySelector('#inputRoman');
 const result = document.querySelector('#result');
+const showButton = document.querySelector('#showCodeRoman');
+const codeSnippet = document.querySelector('#codeSnippetRoman');
 
 romanForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -43,3 +45,9 @@ romanForm.addEventListener("submit", (e) => {
   result.innerHTML = input ? html : `<p>Please enter a number greater than 0</p>`;
   inputString.value = '';
 });
+
+showButton.addEventListener('click', ()=> {
+  let status = codeSnippet.style.display
+status === 'none'? codeSnippet.style.display = 'block' : codeSnippet.style.display = 'none'
+
+})

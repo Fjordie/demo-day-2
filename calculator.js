@@ -1,4 +1,3 @@
-
 function evaluate(string) {
     const newString = string.replace(/\s+/gm, '');
     const regexOperator = /[\+\-\*\/]/gm;
@@ -27,6 +26,8 @@ function evaluate(string) {
 const calcForm = document.querySelector('#calcForm');
 const inputString = document.querySelector('#inputCalc');
 const result = document.querySelector('#result');
+const showButton = document.querySelector('#showCode');
+const codeSnippet = document.querySelector('#codeSnippet');
 
 calcForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -36,3 +37,9 @@ calcForm.addEventListener("submit", (e) => {
   result.innerText = html;
   inputString.value = '';
 });
+
+showButton.addEventListener('click', ()=> {
+  let status = codeSnippet.style.display
+status === 'none'? codeSnippet.style.display = 'block' : codeSnippet.style.display = 'none'
+
+})

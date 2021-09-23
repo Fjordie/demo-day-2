@@ -33,13 +33,25 @@ const fizzForm = document.querySelector('#fizzForm');
 const inputFizz = document.querySelector('#inputFizz');
 const inputBuzz = document.querySelector('#inputBuzz');
 const result = document.querySelector('#result');
+const showButton = document.querySelector('#showCode');
+const codeSnippet = document.querySelector('#codeSnippet');
 
 fizzForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  const fizzValue = inputFizz.value || 'fizz';
-  const buzzValue = inputBuzz.value || 'buzz';
-  result.innerText = fizzbuzz(fizzValue, buzzValue).join(', ');
+  let fizzValue = inputFizz.value || 'fizz';
+  let buzzValue = inputBuzz.value || 'buzz';
+
+  const html = `
+  <h3 id="fizzbuzzResult">Result</h3> 
+    <p>${fizzbuzz(fizzValue, buzzValue).join('</p><p>')}</p>
+  `;
+  result.innerHTML = html;
   fizzValue = '';
   buzzValue = '';
 });
 
+showButton.addEventListener('click', ()=> {
+  let status = codeSnippet.style.display
+status === 'none'? codeSnippet.style.display = 'block' : codeSnippet.style.display = 'none'
+
+})

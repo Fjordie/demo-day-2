@@ -34,6 +34,8 @@ const rates = {
 const arabicForm = document.querySelector('#arabicForm');
 const inputArabic = document.querySelector('#inputArabic');
 const resultArabic = document.querySelector('#resultArabic');
+const showButtonArabic = document.querySelector('#showCodeArabic');
+const codeSnippetArabic = document.querySelector('#codeSnippetArabic');
 
 arabicForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -45,3 +47,8 @@ arabicForm.addEventListener("submit", (e) => {
   resultArabic.innerHTML = input ? html : `<p>Please enter a roman numeral</p>`;
   inputArabic.value = '';
 });
+
+showButtonArabic.addEventListener('click', ()=> {
+  let status = codeSnippetArabic.style.display
+status === 'none'? codeSnippetArabic.style.display = 'block' : codeSnippetArabic.style.display = 'none'
+})
