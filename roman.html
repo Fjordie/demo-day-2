@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numerals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="fizzbuzz.html">Fizzbuzz</a></li>
+            <li>Roman Numerals</li>
+        </ul>
+    </div>
+    <h1>Roman Numerals</h1>
+    <div>
+        <h2>From Arabic numbers to Roman numerals</h2>
+        <form id="romanForm">
+            <label>Enter a number
+                <input type="text" placeholder="Type here" id="inputRoman">
+            </label>
+            <input type="submit" value="Romanize" id="inputButton">
+        </form>
+        <div>
+             
+            <p id="result"></p>
+        </div>
+    </div>
+    <div>
+        <h2>From Roman numerals to Arabic numbers</h2>
+        <form id="arabicForm">
+            <label>Enter a roman numeral
+                <input type="text" placeholder="Type here" id="inputArabic">
+            </label>
+            <input type="submit" value="Arabize" id="inputButton">
+        </form>
+        <div id="resultArabic">
+        </div>
+    </div>
+    <script src="roman.js"></script>
+    <script src="arabic.js"></script>
+</body>
+</html>
