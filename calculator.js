@@ -32,9 +32,9 @@ const codeSnippet = document.querySelector('#codeSnippet');
 calcForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const html = `
-    The result of ${inputString.value} is ${evaluate(inputString.value)}
+    <p>Result: ${inputString.value} = ${evaluate(inputString.value)}</p>
   `;
-  result.innerText = html;
+  result.innerHTML = html;
   inputString.value = '';
 });
 

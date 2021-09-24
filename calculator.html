@@ -12,29 +12,33 @@
         <div class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="active">Calculator</li>
+                <li class="active">Calculator</a></li>
                 <li><a href="fizzbuzz.html">Fizzbuzz</a></li>
-                <li><a href="roman.html">Roman Numerals</a></li>
+                <li><a href="roman.html">Roman</a></li>
+                <li><a href="arabic.html">Arabic</a></li>
+                <li><a href="recap.html">Recap</a></li>
             </ul>
         </div>
-        <h1>Calculator</h1>
+        <!-- <h1>Calculator</h1> -->
         <div>
-            <p>
+            <h2>
                 Enter a string containing a two-number mathematical operations with +, - , /, or *.
-            </p><div>
+            </h2>
+        <div>
         <div>
             <form id="calcForm">
-                <label>Enter a calculation
+                <p class="label">Enter a calculation</p>
+                
                     <input type="text" placeholder="Type here" id="inputCalc">
-                </label>
-                <input type="submit" value="Calculate" id="inputButton">
+                
+                <input type="submit" value="Calculate" id="inputButton" class="buttons">
             </form>
             <div id="result">
                 
             </div>
         </div>
         <div>
-            <button id = "showCode"> 
+            <button id = "showCode" class="buttons"> 
                 Show/Hide Code
             </button>
             <div id="codeSnippet" style="display:none">

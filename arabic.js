@@ -41,7 +41,7 @@ arabicForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const input = inputArabic.value
   const html = `
-    <h3>Result</h3>
+    
      <p>${input} is ${arabic(input)} in Arabic numbers</p>
   `;
   resultArabic.innerHTML = input ? html : `<p>Please enter a roman numeral</p>`;

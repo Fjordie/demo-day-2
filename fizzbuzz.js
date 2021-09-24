@@ -32,7 +32,7 @@ function fizzbuzz(fizz, buzz) {
 const fizzForm = document.querySelector('#fizzForm');
 const inputFizz = document.querySelector('#inputFizz');
 const inputBuzz = document.querySelector('#inputBuzz');
-const result = document.querySelector('#result');
+const result = document.querySelector('#result1');
 const showButton = document.querySelector('#showCode');
 const codeSnippet = document.querySelector('#codeSnippet');
 
@@ -42,7 +42,6 @@ fizzForm.addEventListener("submit", (e) => {
   let buzzValue = inputBuzz.value || 'buzz';
 
   const html = `
-  <h3 id="fizzbuzzResult">Result</h3> 
     <p>${fizzbuzz(fizzValue, buzzValue).join('</p><p>')}</p>
   `;
   result.innerHTML = html;
