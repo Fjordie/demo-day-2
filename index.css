@@ -1,22 +1,57 @@
 body{
    background: url("fjordie.jpg") no-repeat center fixed;
    background-size: cover;
-   /* background-repeat: no-repeat; */
-}
-
-h1 {
-   font-size: 200px;
-   margin: 0;
-   padding-left: 5%;
-}
-
-.headers {
-    position: relative;
-    top: 61%;
-    left: 10%;
+   color: white;
 }
 
 .container {
-    height: 100vh;
+    height: 99vh;
+    width: 99%;
     position: absolute;
 }
+
+.headers {
+    position: absolute;
+    bottom: 5%;
+    padding: 0;
+    margin-left: 5%;
+}
+
+.projects {
+    margin-bottom: 2rem;
+}
+
+h1 {
+   font-size: 400px;
+   margin: 0;
+   margin-left: -10px;
+}
+h2 {
+    font-size: 3.5em;
+    margin: 0;
+    padding-top: 1em;
+
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    font-size: 5em;
+    background: linear-gradient(to right, #ff9800 0%, #ff9800 15px, transparent 5px);
+    background-repeat: repeat-x;
+    background-size: 100%;
+    color: white;
+    padding-left: 50px;
+}
+
+a:hover {
+    background:
+       linear-gradient(
+         to right,
+         #ff9800 0%,
+         #ff9800 100%
+       );
+       color: white;
+   }

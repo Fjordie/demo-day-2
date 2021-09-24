@@ -22,11 +22,11 @@ a {
 }
 
 a:hover {
-    color: #009FB7;
+    color: #ff9800;
 }
 
 .active {
-    color: #009FB7;
+    color: #ff9800;
 }
 .container-project {
     text-align: center;
